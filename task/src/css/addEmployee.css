@@ -1,0 +1,14 @@
+.add-employee-modal {
+  background: linear-gradient(145deg, #ffffff, #f7f7ff);
+  border-radius: 16px;
+}
+
+.add-employee-modal h4 {
+  color: #2d2f7f;
+}
+
+.add-employee-modal input,
+.add-employee-modal select {
+  border-radius: 8px;
+  padding: 10px;
+}

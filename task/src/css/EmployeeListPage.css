@@ -1,0 +1,13 @@
+.employee-list-page {
+  background: #f4f6ff;
+  min-height: 100vh;
+}
+
+.table thead {
+  background-color: #fff;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 0.4em 0.6em;
+}

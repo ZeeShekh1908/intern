@@ -1,0 +1,42 @@
+.dashboard-wrap {
+  min-height: 100vh;
+  background: #f8f9ff;
+}
+
+.sidebar {
+  background: linear-gradient(180deg, #4a6cf7, #5670ff);
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .logo {
+  font-size: 1.2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar ul li:hover {
+  text-decoration: underline;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+}
+
+.stat-card {
+  border: none;
+  border-radius: 12px;
+}

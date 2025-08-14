@@ -1,0 +1,147 @@
+
+.page-wrap {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+
+.panel {
+  background: #ffffff;
+  width: min(1100px, 96vw);
+  min-height: 660px;
+  border-radius: 22px;
+  position: relative;
+  overflow: hidden; 
+}
+
+
+.panel-shade {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    ellipse 80% 70% at 60% 55%,
+    rgba(222, 187, 225, 0.6),
+    rgba(255, 255, 255, 0) 60%
+  );
+  z-index: 0;
+}
+
+/* vertical divider with gaps top/bottom */
+.panel-divider {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120px;
+  bottom: 120px;
+  width: 1px;
+  background: #d7d0dc;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* inputs look soft like Figma */
+.soft-input {
+  background: #f6f3fa;
+  border: 1px solid #e5def0;
+  border-radius: 8px;
+}
+
+/* brand blue for primary actions */
+button.btn-brand {
+  --brand:#0656bd !important;
+  background: var(--brand);
+  border: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+}
+.btn-brand:hover {
+  filter: brightness(0.95);
+}
+
+/* "Sign Up with Email" button */
+button.btn-signup {
+  background: #0656bd !important;
+  color: #fff;
+  border: none;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.btn-signup:hover {
+  filter: brightness(0.95);
+}
+
+/* tiny “Or,” divider line */
+.or-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.or-line {
+  height: 1px;
+  flex: 1;
+  background: #d7d0dc;
+}
+.or-text {
+  margin-top: -2px;
+}
+
+/* muted link under login */
+.link-muted {
+  color: #7a6f8a;
+  text-decoration: none;
+}
+.link-muted:hover {
+  color: #1877f2;
+}
+.right-side{
+  margin-top: 7rem;
+}
+/* social icon buttons */
+.social-btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #e1dceb;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+.social-btn:hover {
+  background: #f6f3fa;
+}
+
+/* PLANTS pinned to bottom corners INSIDE the panel */
+.plant {
+  position: absolute;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0; /* behind content but above shade */
+}
+.plant-left {
+  left: 48px;
+  height: 200px; /* smaller than right */
+  width: auto;
+}
+.plant-right {
+  right: 48px;
+  width: 100px;
+}
+
+@media (max-width: 992px) {
+  .panel-divider {
+    display: none;
+  }
+  .plant {
+    width: 110px;
+  }
+}
